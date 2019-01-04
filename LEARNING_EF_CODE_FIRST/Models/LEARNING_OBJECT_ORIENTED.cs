@@ -17,17 +17,17 @@
 	//	{
 	//	}
 
-	//	private int _age;
+	//	private int age;
 
 	//	public int Age
 	//	{
 	//		get
 	//		{
-	//			return (_age);
+	//			return age;
 	//		}
 	//		set
 	//		{
-	//			_age = value;
+	//			age = value;
 	//		}
 	//	}
 	//}
@@ -38,19 +38,19 @@
 	//	{
 	//	}
 
-	//	private int _age;
+	//	private int age;
 
 	//	public int Age
 	//	{
 	//		get
 	//		{
-	//			return (_age);
+	//			return age;
 	//		}
 	//		set
 	//		{
 	//			if ((value >= 1) && (value <= 99))
 	//			{
-	//				_age = value;
+	//				age = value;
 	//			}
 	//		}
 	//	}
@@ -67,29 +67,29 @@
 
 	//	public Person(int age)
 	//	{
-	//		//_age = age;
+	//		//age = age;
 
 	//		//if ((age >= 1) && (age <= 99))
 	//		//{
-	//		//	_age = age;
+	//		//	age = age;
 	//		//}
 
 	//		Age = age;
 	//	}
 
-	//	private int _age;
+	//	private int age;
 
 	//	public int Age
 	//	{
 	//		get
 	//		{
-	//			return (_age);
+	//			return age;
 	//		}
 	//		set
 	//		{
 	//			if ((value >= 1) && (value <= 99))
 	//			{
-	//				_age = value;
+	//				age = value;
 	//			}
 	//		}
 	//	}
@@ -105,44 +105,28 @@
 	//	{
 	//		Salary = salary;
 
-	//		_salary = salary;
+	//		this.salary = salary;
 	//	}
 
-	//	private int _salary;
+	//	private int salary;
 
 	//	public int Salary
 	//	{
 	//		get
 	//		{
-	//			return (_salary);
+	//			return salary;
 	//		}
 	//	}
 	//}
 
 	public class Person : object
 	{
-		public Person()
-		{
-		}
-
 		public Person(int salary)
 		{
 			Salary = salary;
 		}
 
-		private int _salary;
-
-		public int Salary
-		{
-			get
-			{
-				return (_salary);
-			}
-			//private set
-			protected set
-			{
-				_salary = value;
-			}
-		}
+		//public int Salary { get; private set; }
+		public int Salary { get; protected set; }
 	}
 }

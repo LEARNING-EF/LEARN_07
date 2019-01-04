@@ -154,6 +154,8 @@ namespace Models
 	// **************************************************
 	// **************************************************
 	// **************************************************
+	// Note: Schema does not work in SQL Server Compact Edition!
+	// **************************************************
 	//[System.ComponentModel.DataAnnotations.Schema.Table(name: "Countries", Schema = "Cms")]
 	//public class Country : object
 	//{
@@ -176,6 +178,7 @@ namespace Models
 	//[System.ComponentModel.DataAnnotations.Schema.Table(Schema = "Cms")]
 	//[System.ComponentModel.DataAnnotations.Schema.Table(name: "", Schema = "Cms")]
 	//[System.ComponentModel.DataAnnotations.Schema.Table(name: null, Schema = "Cms")]
+	// **************************************************
 	//public class Country : object
 	//{
 	//	public Country() : base()
@@ -403,6 +406,31 @@ namespace Models
 	//{
 	//	public Country() : base()
 	//	{
+	//		//Id = System.Guid.NewGuid();
+	//	}
+
+	//	[System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated
+	//		(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Computed)]
+	//	public System.Guid Id { get; set; }
+
+	//	[System.ComponentModel.DataAnnotations.Required
+	//		(AllowEmptyStrings = false)]
+
+	//	[System.ComponentModel.DataAnnotations.StringLength
+	//		(maximumLength: 50, MinimumLength = 3)]
+	//	public string Name { get; set; }
+	//}
+	// **************************************************
+	// **************************************************
+	// **************************************************
+
+	// **************************************************
+	// **************************************************
+	// **************************************************
+	//public class Country : object
+	//{
+	//	public Country() : base()
+	//	{
 	//	}
 
 	//	[System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated
@@ -428,7 +456,7 @@ namespace Models
 	// **************************************************
 	// **************************************************
 	// Note: Wrong Usage!
-
+	// **************************************************
 	//public class Country : object
 	//{
 	//	public Country() : base()
@@ -483,10 +511,9 @@ namespace Models
 	//		get
 	//		{
 	//			string result =
-	//				string.Format("{0} - {1}",
-	//				Code.ToString().PadLeft(3, '0'), Name);
+	//				$"{ Code.ToString().PadLeft(3, '0') } - { Name }";
 
-	//			return (result);
+	//			return result;
 	//		}
 	//	}
 	//}
@@ -538,11 +565,10 @@ namespace Models
 	//	{
 	//		get
 	//		{
-	//			string strResult =
-	//				string.Format("{0} - {1}",
-	//				Code.ToString().PadLeft(4, '_'), Name);
+	//			string result =
+	//				$"{ Code.ToString().PadLeft(3, '0') } - { Name }";
 
-	//			return (strResult);
+	//			return result;
 	//		}
 	//	}
 
@@ -595,6 +621,7 @@ namespace Models
 	/// <summary>
 	/// با تشکر از آقايان، مهدی مشايخی و حسين شريفی پناه
 	/// </summary>
+	// **************************************************
 	//public class Country : object
 	//{
 	//	public Country() : base()
@@ -627,6 +654,8 @@ namespace Models
 
 	// **************************************************
 	// **************************************************
+	// **************************************************
+	// Note: EF 6+
 	// **************************************************
 	//public class Country : object
 	//{

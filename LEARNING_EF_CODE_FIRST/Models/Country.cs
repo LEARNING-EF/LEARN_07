@@ -406,31 +406,6 @@ namespace Models
 	//{
 	//	public Country() : base()
 	//	{
-	//		//Id = System.Guid.NewGuid();
-	//	}
-
-	//	[System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated
-	//		(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Computed)]
-	//	public System.Guid Id { get; set; }
-
-	//	[System.ComponentModel.DataAnnotations.Required
-	//		(AllowEmptyStrings = false)]
-
-	//	[System.ComponentModel.DataAnnotations.StringLength
-	//		(maximumLength: 50, MinimumLength = 3)]
-	//	public string Name { get; set; }
-	//}
-	// **************************************************
-	// **************************************************
-	// **************************************************
-
-	// **************************************************
-	// **************************************************
-	// **************************************************
-	//public class Country : object
-	//{
-	//	public Country() : base()
-	//	{
 	//	}
 
 	//	[System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated

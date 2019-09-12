@@ -16,10 +16,10 @@
 				databaseContext =
 					new Models.DatabaseContext();
 
-				Models.Country newCountry = new Models.Country();
-
-				//oCountry.Id = 1;
-				newCountry.Name = "Iran";
+				Models.Country newCountry = new Models.Country
+				{
+					Name = "Iran",
+				};
 
 				databaseContext.Countries.Add(newCountry);
 
@@ -34,7 +34,7 @@
 				if (databaseContext != null)
 				{
 					databaseContext.Dispose();
-					databaseContext = null;
+					//databaseContext = null;
 				}
 			}
 		}

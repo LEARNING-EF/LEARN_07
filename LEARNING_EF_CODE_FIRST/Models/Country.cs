@@ -632,6 +632,37 @@ namespace Models
 	// **************************************************
 	// Note: EF 6+
 	// **************************************************
+	//public class User : object
+	//{
+	//	public User() : base()
+	//	{
+	//		Id = System.Guid.NewGuid();
+	//	}
+
+	//	public System.Guid Id { get; set; }
+
+	// توجه مهم: خطا می‌دهد
+	//	[System.ComponentModel.DataAnnotations.Schema.Index
+	//		(IsUnique = false)]
+	//	public string FullName { get; set; }
+
+	//	[System.ComponentModel.DataAnnotations.MaxLength
+	//		(length: 50)]
+
+	//	[System.ComponentModel.DataAnnotations.Schema.Index
+	//		(IsUnique = false)]
+	//	public string FullName { get; set; }
+
+	//	[System.ComponentModel.DataAnnotations.MaxLength
+	//		(length: 20)]
+
+	//	[System.ComponentModel.DataAnnotations.Schema.Index
+	//		(IsUnique = true)]
+	//	public string Username { get; set; }
+	//}
+	// **************************************************
+
+	// **************************************************
 	//public class Country : object
 	//{
 	//	public Country() : base()

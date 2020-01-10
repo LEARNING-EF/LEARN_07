@@ -8,7 +8,7 @@
 				(new System.Data.Entity.DropCreateDatabaseIfModelChanges<DatabaseContext>());
 		}
 
-		public DatabaseContext()
+		public DatabaseContext() : base()
 		{
 		}
 

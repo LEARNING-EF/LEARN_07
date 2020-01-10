@@ -2,7 +2,7 @@
 {
 	public class SampleClass : object
 	{
-		public SampleClass()
+		public SampleClass() : base()
 		{
 			Id = System.Guid.NewGuid();
 		}

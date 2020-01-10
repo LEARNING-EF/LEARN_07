@@ -6,16 +6,16 @@ namespace Models
 	// **************************************************
 	// **************************************************
 	// **************************************************
-	public class Country : object
-	{
-		public Country() : base()
-		{
-		}
+	//public class Country : object
+	//{
+	//	public Country() : base()
+	//	{
+	//	}
 
-		public int Id { get; set; }
+	//	public int Id { get; set; }
 
-		public string Name { get; set; }
-	}
+	//	public string Name { get; set; }
+	//}
 	// **************************************************
 	// **************************************************
 	// **************************************************
@@ -348,23 +348,23 @@ namespace Models
 	// **************************************************
 	// **************************************************
 	// **************************************************
-	//public class Country : object
-	//{
-	//	public Country() : base()
-	//	{
-	//	}
+	public class Country : object
+	{
+		public Country() : base()
+		{
+		}
 
-	//	[System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated
-	//		(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None)]
-	//	public int Id { get; set; }
+		[System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated
+			(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None)]
+		public int Id { get; set; }
 
-	//	[System.ComponentModel.DataAnnotations.Required
-	//		(AllowEmptyStrings = false)]
+		[System.ComponentModel.DataAnnotations.Required
+			(AllowEmptyStrings = false)]
 
-	//	[System.ComponentModel.DataAnnotations.StringLength
-	//		(maximumLength: 50, MinimumLength = 3)]
-	//	public string Name { get; set; }
-	//}
+		[System.ComponentModel.DataAnnotations.StringLength
+			(maximumLength: 50, MinimumLength = 3)]
+		public string Name { get; set; }
+	}
 	// **************************************************
 	// **************************************************
 	// **************************************************

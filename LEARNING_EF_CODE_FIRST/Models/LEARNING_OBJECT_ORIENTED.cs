@@ -17,17 +17,17 @@
 	//	{
 	//	}
 
-	//	private int age;
+	//	private int _age;
 
 	//	public int Age
 	//	{
 	//		get
 	//		{
-	//			return age;
+	//			return _age;
 	//		}
 	//		set
 	//		{
-	//			age = value;
+	//			_age = value;
 	//		}
 	//	}
 	//}
@@ -38,19 +38,19 @@
 	//	{
 	//	}
 
-	//	private int age;
+	//	private int _age;
 
 	//	public int Age
 	//	{
 	//		get
 	//		{
-	//			return age;
+	//			return _age;
 	//		}
 	//		set
 	//		{
 	//			if ((value >= 1) && (value <= 99))
 	//			{
-	//				age = value;
+	//				_age = value;
 	//			}
 	//		}
 	//	}
@@ -67,29 +67,29 @@
 
 	//	public Person(int age)
 	//	{
-	//		//age = age;
+	//		//_age = age;
 
 	//		//if ((age >= 1) && (age <= 99))
 	//		//{
-	//		//	age = age;
+	//		//	_age = age;
 	//		//}
 
 	//		Age = age;
 	//	}
 
-	//	private int age;
+	//	private int _age;
 
 	//	public int Age
 	//	{
 	//		get
 	//		{
-	//			return age;
+	//			return _age;
 	//		}
 	//		set
 	//		{
 	//			if ((value >= 1) && (value <= 99))
 	//			{
-	//				age = value;
+	//				_age = value;
 	//			}
 	//		}
 	//	}
@@ -108,13 +108,13 @@
 	//		this.salary = salary;
 	//	}
 
-	//	private int salary;
+	//	private int _salary;
 
 	//	public int Salary
 	//	{
 	//		get
 	//		{
-	//			return salary;
+	//			return _salary;
 	//		}
 	//	}
 	//}

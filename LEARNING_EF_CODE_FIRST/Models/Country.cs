@@ -271,7 +271,7 @@ namespace Models
 	//		(AllowEmptyStrings = false)]
 
 	//	[System.ComponentModel.DataAnnotations.MinLength
-	//		(length: 2)]
+	//		(length: 3)]
 	//	public string Name { get; set; }
 	//}
 	// **************************************************
